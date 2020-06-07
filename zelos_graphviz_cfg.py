@@ -27,9 +27,6 @@ class GraphvizCFG(IPlugin):
                 f"(and optionally --fasttrace) to enable verbose mode."
             )
 
-        self.inst_handle = None
-        self.sysc_handle = None
-
         if self.zelos.config.cfg:
             self.cfg = Digraph(filename="cfg", format="png")
             self.subscribe_to_feed()
